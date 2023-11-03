@@ -404,6 +404,8 @@ margin-top: -3px;
     text-decoration: none;
     margin-top: 15px;
     border: 2px solid #000;
+    appearance: none;
+    -webkit-appearance: none;
     
 }
 

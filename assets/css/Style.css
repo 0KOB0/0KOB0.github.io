@@ -1,0 +1,627 @@
+*
+{padding: 0;
+margin: 0;
+box-sizing: border-box;
+/* 
+1. Từ ngoài vào trong
+2. Từ trên xuống dưới
+3. Tổng quan đến chi tiết
+
+ */
+
+/* 
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng
+*/
+/* common */
+}
+
+.text-white{
+    color: white !important ;
+}
+
+html
+{ 
+    scroll-behavior: smooth;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.mt-8px
+{
+    margin-top: 8px !important;
+}
+
+.mt-16px
+{
+    margin-top: 16px !important;
+}
+
+.mt-32px
+{
+    margin-top: 32px;
+}
+.row
+{
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.row::after
+{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.col 
+{
+    padding-left: 8px;
+    padding-right: 8px;
+    float: left;
+}
+
+.col-third
+{
+    width: calc(100%/3);
+}
+/* main */
+
+.col-second
+{
+    width: calc(100%/5) ;
+}
+
+.col-fifth
+{
+    width: calc(100%/2);
+}
+
+.col-full
+{
+    width: 100%;
+}
+
+#main {
+    
+}
+#header {
+    height: 46px;
+    background-color: #000;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    position: fixed;
+}
+
+.clear
+{
+    clear: both;
+}
+
+#nav
+{
+    display: inline-block;
+}
+
+#nav, .subnav 
+{ list-style-type: none;
+}
+
+#nav > li >  a
+{
+    color: white;
+    text-transform: uppercase;
+}
+
+#nav li a
+{
+    text-decoration: none;
+    line-height: 46px;
+    padding: 0 24px;
+    
+    display: block;
+
+}
+#nav li:hover .subnav
+{
+    display: block;
+}
+
+#header .menu-mobile
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: none;
+}
+
+#header .menu-mobile,
+#header .search-button
+{
+    float: right;
+    cursor: pointer;
+   
+}
+
+#header .search-button:hover
+{background-color: #f44336;}
+#header .menu-mobile:hover
+{background-color: #ccc;}
+
+
+#header .search-icon ,
+#header .menu-icon
+{
+    color: #fff;
+    font-size: 20px;
+    line-height: 46px;
+    padding: 0 21px;
+    
+}
+
+
+#nav > li:hover > a,
+#nav .subnav li:hover a
+{
+color: #000; 
+background-color: #ccc;
+display: block;
+}
+
+#nav > li {
+    display: inline-block;
+}
+
+#nav li {
+    
+    position: relative;
+}
+
+#nav .subnav
+{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    min-width: 160px;
+    top: 100%;
+    left: 0;
+}
+
+#nav .subnav a
+{
+    color: #000;
+    padding: 0 12px;
+    line-height: 38px;
+}
+
+.arrow-down-icon
+{font-size: 14px;
+}
+
+#slider {
+    margin-top: 46px;
+    padding-top: 50%;
+    background: url(/assets/Slider/slider1.jpg) top center / cover no-repeat; 
+    position: relative;
+
+}
+
+
+#slider .text-slider
+{
+    position: absolute;
+    bottom: 48px;
+    color: #fff;
+    text-align: center;
+    right: 0;
+    left: 0;
+    /* width: 100%; */
+    /* left: 50%;
+    transform: translateX(-50%);
+     */
+    
+    
+}
+#slider .text-heading
+{
+   font-weight: 500;
+   font-size: 24px;
+}
+#slider .text-description
+{
+    font-size: 15px;
+    margin-top: 25px;
+}
+
+#container {
+    
+}
+
+
+#container .content-section
+{
+    width: 800px;
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 64px 0 112px;
+    padding-left: 16px;
+    padding-right: 16px
+}
+
+#container .section-heading
+{
+    font-size: 30px;
+    font-weight: 500px;
+    letter-spacing: 2px;
+    text-align: center;
+}
+
+#container .section-sub-heading
+{
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.8;
+    
+}
+
+#container .section-about-heading
+{
+    font-size: 15px;
+    margin-top: 25px;
+    text-align: justify;
+}
+
+#container .section-heading,
+#container .section-sub-heading
+{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 1.6;
+}
+
+#container .member-list
+{
+    margin-top: 32px;
+    overflow: hidden;
+}
+
+
+#container .member-name
+{
+    font-size: 15px;
+    text-align: center;
+    font-style: oblique;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+#container .img-member
+{
+    width: 150px;
+    height: 260px;
+    margin-top: 15px;
+    margin: 15px auto;
+}
+
+.Song-section
+{background-color: #000;
+}
+
+.release-day
+{
+    background-color: #fff;
+    margin-top: 40px;
+}
+
+.release-day li
+{
+    color: #000;
+    font-size: 15px;
+    padding: 12px 16px ;
+    border-bottom: 1px solid #ddd;
+    list-style: none;
+}
+
+.release-day .song-views
+{margin-left: 16px;
+background-color: #f44336;
+border-radius: 0%;
+color: #fff;
+padding: 3px 4px;
+
+}
+
+.release-day .rank1
+{
+float: right;
+width: 70px;
+height: 24px;
+background-color: #000;
+color: #fff;
+border-radius: 60%;
+text-align: center;
+line-height: 24px;
+margin-top: -3px;
+}
+
+.song-list
+{
+    margin-top: 32px;
+}
+
+.song-poster
+{
+   width: 100%;
+   height: 188px; 
+   display: block; 
+}
+
+.song-poster:hover
+{
+    opacity: 0.6;
+}
+.place-namesong
+{   padding: 16px;
+    background-color: #fff;
+    font-size: 15px;
+    
+}
+
+
+.place-name-heading
+{
+    font-weight: 600px;
+    margin-top: 15px;
+}
+.song-time 
+{
+    margin-top: 15px;
+    color: #757575;
+    
+    
+}
+.song-description
+{ 
+    margin-top: 15px;
+    height: 350px;
+    
+}
+
+.button-song
+{
+    color: #fff;
+    background-color: #f44336;
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    margin-top: 15px;
+    border: 2px solid #000;
+    
+}
+
+.button-song:hover
+{
+    background-color: red;
+    color: #000;
+    
+}
+
+#footer {
+    padding: 64px 16px;
+    text-align: center;
+}
+
+.modal.open
+{
+ display: flex;
+}
+
+.modal
+{
+    display: none;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0 ;    
+    bottom: 0;  
+    right: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.modal-container
+{
+    width: 900px;
+    min-height: 200px;
+    background-color: #fff;
+    position: relative;
+    max-width: calc(100%-32px);
+    animation: modalFadein ease 0.9s;
+    
+}
+
+.modal-header
+{
+    background: #9f22d5;
+    height: 130px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+    color: #fff;
+}
+
+.ti-bag
+{
+    margin-right: 6px;
+}
+
+.modal-close
+{
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: #fff;
+    padding: 12px;
+    opacity: 0.9;
+}
+
+.modal-body
+{
+    padding: 16px;
+}
+
+.modal-label
+{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 12px;
+}
+
+.modal-input
+{
+    display: block;
+    border: 1px solid #ccc;
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    margin-bottom: 24px;
+}
+
+.buy-picture
+{
+    background-color: #531374;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: #fff;
+    padding: 18px;
+    border: none;
+}
+
+.buy-picture:hover
+{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.modal-footer
+{
+    padding: 16px;
+    text-align: right;
+}
+
+.modal-footer a
+{
+color: #2196f3;
+}
+
+
+
+@keyframes modalFadein 
+{
+    from {
+        transform: translateY(-140px);
+        opacity: 0;
+     }
+     to 
+     {
+        transform: translateY(0);
+        opacity: 1;
+
+     }
+}
+
+.contact-content
+{
+    margin-top: 48px;
+}
+
+.contact-info
+{
+    font-size: 18px;
+    line-height: 1.5;
+   
+    
+}
+
+.contact-info i[class*="ti-"]
+{
+    width: 30px;
+    display: inline-block;
+
+}
+
+.contact-info a
+{
+    color: #0f45d9;
+}
+
+.contact-info a:hover
+{
+    color: #9f22d5;
+}
+
+.contact-form .form-control
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 100%;
+    line-height: 10px;
+}
+
+.contact-form .form-submit
+{
+background-color: #000;
+border: 1px solid #000;
+color: #fff;
+padding: 4px 16px;
+float: right;
+}
+
+.form-submit:hover
+{
+    cursor: pointer;
+    background-color: #f44336;
+}
+
+.map-section img
+{
+    width: 100%;
+}
+
+#footer .social-list
+{
+    font-size: 24px;
+}
+
+#footer .social-list a
+{
+    color: rgba(0, 0, 0, 0.6);
+    text-decoration: none;
+}
+
+#footer .copy-right
+{
+    margin-top: 15px;
+    color: rgba(0, 0, 0, 0.4); 
+}
+#footer .copy-right a:hover, 
+#footer .social-list a:hover
+{
+ 
+ color: rgba(0, 0, 0, 0.6); 
+
+}
+#footer .copy-right a
+{
+    color: rgba(0, 0, 0, 0.6); 
+}
+

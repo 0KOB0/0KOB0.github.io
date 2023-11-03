@@ -1,0 +1,133 @@
+/* mobile */
+@media (max-width: 740px) {
+    .mobi-mt-8
+    {
+        margin-top: 8px !important;
+    }
+    
+    .m-col-full
+    {
+        width: 100% !important;
+    }
+    
+    #nav
+    {
+        display: block;
+    }
+
+    #header .menu-mobile
+    {
+        display: block;
+    }
+
+    #header .search-button
+    {
+        display: none;
+    }
+#nav > li 
+{
+    display: block;
+}
+#nav .subnav {
+    position: initial;
+    background-color: #000;
+}
+
+#nav li a
+{
+    padding: 2px 24px;
+}
+
+#nav .subnav a
+{
+    color: #fff;
+    padding: 5px 41px;
+}
+#nav > li:first-child
+{
+    display: inline-block;
+}
+
+
+#header
+{
+    overflow: hidden;
+}
+
+#header .subnav
+{
+
+}
+.content-section .member-item
+{
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+}
+
+#container .img-member
+{
+    width: 350px;
+    height: 560px;
+}
+
+.song-description
+{
+    height: auto;
+}
+
+
+.contact-form
+{
+    margin-top: 32px;
+   
+}
+
+.contact-info
+    {
+        line-height: 2;
+    }
+}
+
+
+/* Table, mobile */
+@media (max-width: 1024px) 
+{
+    .button-song
+    {
+        padding: 15px 16px;
+    }
+
+    .contact-form .form-control
+    {
+        padding: 15px;
+    }
+
+    #footer .social-list 
+    {
+        font-size: 48px;
+    }
+
+    #footer .copy-right
+    {
+        font-size: 32px;
+        padding: 12px 0 ;
+        display: inline-block;
+    }
+
+    #footer .social-list a
+    {
+        margin: 0 12px;
+    }
+    
+}
+
+/* Table */
+@media (min-width: 740px) and (max-width: 1024px)
+{
+    .contact-info
+    {
+        line-height: 2;
+    }
+}
+

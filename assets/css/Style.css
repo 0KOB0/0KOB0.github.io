@@ -309,6 +309,9 @@ display: block;
     height: 260px;
     margin-top: 15px;
     margin: 15px auto;
+    justify-content: center;
+    display: flex;
+
 }
 
 .Song-section

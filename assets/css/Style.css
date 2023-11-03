@@ -586,6 +586,8 @@ border: 1px solid #000;
 color: #fff;
 padding: 4px 16px;
 float: right;
+appearance: none;
+-webkit-appearance: none;
 }
 
 .form-submit:hover

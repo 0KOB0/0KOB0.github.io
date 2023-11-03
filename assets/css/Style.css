@@ -582,20 +582,15 @@ color: #2196f3;
     line-height: 10px;
 }
 
-.contact-form .form-submit
+.form-submit
 {
 background-color: #000;
 border: 1px solid #000;
 color: #fff;
 padding: 4px 16px;
-float: right;
-
-}
-
-.btn
-{
-    appearance: none;
-    -webkit-appearance: none;
+float: right;  
+appearance: none;
+-webkit-appearance: none;
 }
 
 .form-submit:hover
